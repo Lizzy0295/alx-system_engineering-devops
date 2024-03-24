@@ -1,1 +1,40 @@
-https://imgur.com/a/weoVU8j
+https://1drv.ms/t/s!AjyBLeJ6MFLaiS5dOCbykfsf6Qo9?e=5omMEV
+
+
+
+1. Load Balancer (HAproxy):
+  a.Added for distributing incoming web traffic evenly across servers to improve performance and reliability.
+   
+  b.Configured with Round Robin distribution algorithm, directing requests to each server in sequence.
+   
+  c.Implements an Active-Active setup, where all servers actively handle requests simultaneously.
+   
+
+2. Database Primary-Replica (Master-Slave) cluster : Manages website data and ensures data integrity, implementing a Primary-Replica cluster to distribute workload and provide redundancy.
+
+
+a. Primary node: Accepts write operations and replicates data changes to replica nodes.
+
+
+b.Replica node: Provides read-only access, replicating data from the primary node to ensure redundancy and scalability.
+
+
+Issues with this infrastructure:
+
+
+a.Single point of Failure(SPOF): if there is only one load balancer in the setup and it fails, all incoming traffic will be disrupted.
+
+b.If either the web server or the application server experiences downtime, users won't be able to access the website.
+
+
+Security issues:
+
+
+No Firewall: without a firewall, the infrastructure is vulnerable to various types of attacks and malware injections.
+
+No HTTPS: The lack of HTTPS encryption means that data transmitted between users and the website is not secure. 
+
+No Monitoring System: the lack of monitoring system in place,to detect and address performance issues or security breaches will be challenging.
+
+
+
