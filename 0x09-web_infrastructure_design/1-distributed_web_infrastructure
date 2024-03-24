@@ -1,7 +1,6 @@
 https://1drv.ms/t/s!AjyBLeJ6MFLaiS5dOCbykfsf6Qo9?e=5omMEV
 
 
-
 1. Load Balancer (HAproxy):
   a.Added for distributing incoming web traffic evenly across servers to improve performance and reliability.
    
