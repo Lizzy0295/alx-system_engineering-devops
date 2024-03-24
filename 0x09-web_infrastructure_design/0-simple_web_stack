@@ -1,10 +1,17 @@
 https://1drv.ms/t/s!AjyBLeJ6MFLaiS81nf3REDID5giG?e=edZOcj
+
 1.A server is a device, a virtual device or computer program or providing functionality for devices, called “clients”. 
+
 2.The domain name is used to locate and access resources on the internet.
+
 3.The “www” in www.foobar.com is a subdomain.
+
 4.The web server, in this case, Nginx, plays a crucial role in handling HTTP requests from clients (web browsers) and delivering web content.
+
 5.The application server is responsible for executing the dynamic code that powers the website’s functionality.
+
 6.The database serves as the storage and management system for the website's data.
+
 7.The server communicates with the user's computer using the HTTP (Hypertext Transfer Protocol) protocol over the internet.
 
 
@@ -12,6 +19,7 @@ Issues with this infrastructure:
 
 
 1.Single Point of Failure (SPOF):this infrastructure has a single server, any hardware failure, software issues, or any other disruptions, the entire website becomes inaccessible.
+
 2.Downtime during Maintenance: deploying new code or performing maintenance activities. this leads to downtime during the maintenance window, where the website becomes temporarily inaccessible to users.
 
 3.Limited scalability: Without horizontal scaling capabilities, the website may experience performance degradation or even downtime during traffic surges.
