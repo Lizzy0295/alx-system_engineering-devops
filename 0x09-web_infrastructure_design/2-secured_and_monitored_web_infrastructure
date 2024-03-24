@@ -1,1 +1,35 @@
-https://imgur.com/a/iYaSz5J
+https://1drv.ms/t/s!AjyBLeJ6MFLaiSxk17s_lVfEF6_T?e=3b7z2D
+
+
+1. **Firewalls:**
+   - Added for enhanced security by controlling incoming and outgoing network traffic, preventing unauthorized access, and filtering out potential threats.
+
+
+2. **HTTPS Traffic:**
+   - Traffic served over HTTPS to encrypt data exchanged between clients and servers, ensuring confidentiality and integrity.
+
+
+3. **Monitoring:**
+   - Used to observe performance, availability, and security of the infrastructure in real-time, helping to identify and troubleshoot issues and ensure smooth operation of the website.
+
+
+4. **Data Collection by Monitoring Tools:**
+   - Monitoring tools collect data by deploying monitoring agents or clients on each server, continuously gathering information.
+
+
+5. **Monitoring Web Server QPS (Queries per Second):**
+   - To monitor web server QPS, configure the monitoring tool to track incoming HTTP requests and calculate the rate at which they are processed by the server.
+
+
+Issues with this infrastructure:
+
+
+a.Terminating SSL at the Load Balancer Level: Once SSL is terminated, data is transmitted in plain text within the internal network. If an attacker gains unauthorized access to the internal network, they can intercept sensitive data.
+
+
+b.Single MySQL Server Capable of Accepting Writes: If this server goes down or experiences issues, write operations will fail, leading to data inconsistency and potentially causing downtime for the website.
+
+
+Servers with All the Same Components: this might lead to an issue of
+Lack of resource optimization, Limited fault isolation,Reduced flexibility and scalability.
+
