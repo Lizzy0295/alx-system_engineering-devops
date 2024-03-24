@@ -1,1 +1,14 @@
-https://imgur.com/a/Jk4lHdn
+https://1drv.ms/t/s!AjyBLeJ6MFLaiS271yGogkqKHKrE?e=sdoajE
+
+Load-Balancer (HAproxy Cluster): The load balancer is added to distribute incoming web traffic across multiple servers. 
+
+Web Server, Application Server, and Database Server (Split Components): 
+
+Web Server: Handles HTTP requests from clients and serves static content directly. 
+
+Application Server: Executes application logic, processes dynamic content, and interacts with the database.
+
+Database Server: Stores and manages application data, providing persistent storage and ensuring data integrity.
+
+HAproxy Load-Balancer Configuration as a Cluster: Configuring HAproxy as a cluster provides high availability and fault tolerance. 
+
